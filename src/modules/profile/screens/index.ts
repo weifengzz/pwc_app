@@ -5,9 +5,9 @@
  * @description 导出界面组件
  */
 
-// 首页
-import HomeScreen from './home_screen'
+//个人中心
+import ProfileScreen from './profile_screen'
 
 export {
-  HomeScreen
+  ProfileScreen
 }

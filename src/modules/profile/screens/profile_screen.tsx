@@ -1,8 +1,8 @@
 /**
- * 首页界面
- * 2018-10-10
+ * 个人中心界面
+ * 2018-10-11
  * @author koohead
- * @description 首页
+ * @description 个人中心
  */
 
 import React from 'react'
@@ -12,14 +12,14 @@ import {
   Text
 } from 'react-native'
 
-class HomeScreen extends Component {
+class ProfileScreen extends Component {
   render () {
     return (
       <View>
-        <Text>首页</Text>
+        <Text>我的</Text>
       </View>
     )
   }
 }
 
-export default HomeScreen
+export default ProfileScreen
