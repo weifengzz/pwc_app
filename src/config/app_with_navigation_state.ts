@@ -14,7 +14,7 @@ import {
 const App = reduxifyNavigator(Router, 'main')
 
 const mapStateToProps = (state: any) => ({
-  nav: state.nav
+  state: state.nav
 })
 
 const AppWithNavigationState = connect(mapStateToProps, {})(App)

@@ -24,8 +24,8 @@ import {
 const initialState = Router.router.getStateForAction(Router.router.getActionForPathAndParams('main')!)
 
 const navReducer = (state = initialState, action: any) => {
-  const nextState = Router.router.getStateForAction(action, state);
-  return nextState || state;
+  const nextState = Router.router.getStateForAction(action, state)
+  return nextState || state
 };
 
 
