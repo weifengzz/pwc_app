@@ -1,4 +1,4 @@
-package com.pwc_app;
+package com.koohead.pwcapp;
 
 import com.facebook.react.ReactActivity;
 

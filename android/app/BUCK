@@ -45,12 +45,12 @@ android_library(
 
 android_build_config(
     name = "build_config",
-    package = "com.pwc_app",
+    package = "koohead.pwc_app",
 )
 
 android_resource(
     name = "res",
-    package = "com.pwc_app",
+    package = "koohead.pwc_app",
     res = "src/main/res",
 )
 
