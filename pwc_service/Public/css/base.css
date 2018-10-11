@@ -1,0 +1,41 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0} 
+body {
+    font-size: 12px;
+    font-family: "Microsoft YaHei" !important;
+}
+.w {
+    margin: 0 auto;
+    width: 1210px;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+a:hover {
+    text-decoration: none;
+}
+/*修改提示文字的颜色*/
+input::-webkit-input-placeholder { /* WebKit browsers */
+    font-weight: 500;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    font-weight: 500;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-weight: 500;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    font-weight: 500;
+}
+i.fa-refresh{
+    padding-top: 12px;
+    cursor: pointer;
+}
+i.fa-refresh:hover{
+    color: red;
+}
+input.date{
+    background: url("../images/rili.png") no-repeat 96%;
+}
