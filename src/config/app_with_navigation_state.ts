@@ -12,8 +12,7 @@ import {
 } from 'react-navigation-redux-helpers'
 
 /**
- * @class
- * @classdesc router状态管理
+ * router状态管理
  * 关于reduxifyNavigator方法，TypeScript需要修改源码，
  * 以此来通过验证
  * export function reduxifyNavigator<S>(
@@ -21,6 +20,7 @@ import {
  *  key: string,
  * ) : React.ComponentType<{ state: NavigationState; dispatch?: NavigationDispatch }>;
  * ----------------------------------------------------------^------------------------
+ * react-navigation-redux-helpers 版本信息（"react-navigation-redux-helpers": "^2.0.6"）
  */
 const App = reduxifyNavigator(Router, 'main')
 
