@@ -14,6 +14,10 @@ import {
   View
 } from 'react-native'
 
+/**
+ * @class
+ * @classdesc 绑定redux组件
+ */
 export default class App extends Component {
   render () {
     return (

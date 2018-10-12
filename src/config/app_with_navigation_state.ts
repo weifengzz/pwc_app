@@ -11,6 +11,17 @@ import {
   reduxifyNavigator
 } from 'react-navigation-redux-helpers'
 
+/**
+ * @class
+ * @classdesc router状态管理
+ * 关于reduxifyNavigator方法，TypeScript需要修改源码，
+ * 以此来通过验证
+ * export function reduxifyNavigator<S>(
+ *  navigator: Navigator,
+ *  key: string,
+ * ) : React.ComponentType<{ state: NavigationState; dispatch?: NavigationDispatch }>;
+ * ----------------------------------------------------------^------------------------
+ */
 const App = reduxifyNavigator(Router, 'main')
 
 const mapStateToProps = (state: any) => ({
