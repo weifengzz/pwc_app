@@ -24,10 +24,11 @@ import {
  */
 const App = reduxifyNavigator(Router, 'main')
 
-const mapStateToProps = (state: any) => ({
-  state: state.nav
+const mapStateToProps = (state: any, dispatch: any) => ({
+  state: state.nav,
+  dispatch
 })
 
-const AppWithNavigationState = connect(mapStateToProps, {})(App)
+const AppWithNavigationState = connect(mapStateToProps)(App)
 
 export default AppWithNavigationState

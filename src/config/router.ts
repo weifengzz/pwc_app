@@ -35,7 +35,14 @@ import { ProfileScreen } from '../modules/profile/screens'
 
 const Router = createStackNavigator({
   main: {
-    screen: HomeScreen
+    screen: TabNavigator({
+      home: {
+        screen: HomeScreen
+      },
+      profile: {
+        screen: ProfileScreen
+      }
+    })
   }
 })
 
