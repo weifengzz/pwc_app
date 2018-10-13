@@ -5,7 +5,7 @@
  * @description app导航管理
  */
 
-import { TabNavigator, StackNavigator, createStackNavigator } from 'react-navigation'
+import { TabNavigator, StackNavigator, createStackNavigator, createBottomTabNavigator } from 'react-navigation'
 
 // 首页
 import { HomeScreen } from '../modules/home/screens'
@@ -35,7 +35,7 @@ import { ProfileScreen } from '../modules/profile/screens'
 
 const Router = createStackNavigator({
   main: {
-    screen: TabNavigator({
+    screen: createBottomTabNavigator({
       home: {
         screen: HomeScreen
       },
