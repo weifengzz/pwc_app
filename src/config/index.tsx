@@ -9,7 +9,7 @@ import React from 'react'
 import { Component } from 'react'
 import store from './store'
 import { Provider } from 'react-redux'
-import AppWithNavigationState from './app_with_navigation_state'
+import AppNavigationControl from './app_navigation_control'
 import {
   View
 } from 'react-native'
@@ -23,7 +23,7 @@ export default class App extends Component {
     return (
       <View style={{flex: 1}}>
         <Provider store={store}>
-          <AppWithNavigationState />
+          <AppNavigationControl />
         </Provider>
       </View>
     )

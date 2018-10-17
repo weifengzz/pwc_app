@@ -1,3 +1,3 @@
-rootProject.name = 'koohead.pwc_app'
+rootProject.name = 'pwc_app'
 
 include ':app'
