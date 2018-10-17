@@ -9,6 +9,7 @@
  * 返回键，类型管理
  * @interface
  */
-export interface IAppNavigationControlProps {
-  nav: any
+export interface IGuideProps {
+  navigation: any,
+  styles: any
 }

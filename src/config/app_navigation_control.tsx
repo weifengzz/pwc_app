@@ -9,13 +9,13 @@ import React from 'react'
 import { Component } from 'react'
 import AppWithNavigationState from './app_with_navigation_state'
 import { connect } from 'react-redux'
-import { AppNavigationControlProps } from './PropType'
+import { IAppNavigationControlProps } from './PropType'
 
 /**
  * @class
  * @classdesc 返回状态管理
  */
-class AppNavigationControl extends Component<AppNavigationControlProps> {
+class AppNavigationControl extends Component<IAppNavigationControlProps> {
   render () {
     return (
       <AppWithNavigationState />

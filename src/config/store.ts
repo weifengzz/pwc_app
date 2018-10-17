@@ -21,7 +21,7 @@ import {
 } from 'redux'
 
 // 初始化router状态
-const initialState = Router.router.getStateForAction(Router.router.getActionForPathAndParams('main')!)
+const initialState = Router.router.getStateForAction(Router.router.getActionForPathAndParams('guide')!)
 
 const navReducer = (state = initialState, action: any) => {
   const nextState = Router.router.getStateForAction(action, state)
@@ -30,7 +30,7 @@ const navReducer = (state = initialState, action: any) => {
 
 
 const middleware = createReactNavigationReduxMiddleware(
-  'main',
+  'guide',
   (state: any) => state.nav
 )
 

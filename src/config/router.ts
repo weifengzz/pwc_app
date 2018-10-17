@@ -5,36 +5,25 @@
  * @description app导航管理
  */
 
-import { TabNavigator, StackNavigator, createStackNavigator, createBottomTabNavigator } from 'react-navigation'
+import {
+  TabNavigator,
+  StackNavigator,
+  createStackNavigator,
+  createBottomTabNavigator,
+  createSwitchNavigator,
+  SwitchNavigator
+} from 'react-navigation'
 
 // 首页
 import { HomeScreen } from '../modules/home/screens'
 // 我的
 import { ProfileScreen } from '../modules/profile/screens'
+// 引导页
+import { GuideScreen } from '../modules/guide/screens'
 
-/**
- * @class
- * @classdesc 路由配置
- */
-// const Router = createStackNavigator({
-//   main: StackNavigator({
-//     screen: StackNavigator({
-//       mainTab: {
-//         screen: TabNavigator({
-//           home: {
-//             screen: HomeScreen
-//           },
-//           profile: {
-//             screen: ProfileScreen
-//           }
-//         })
-//       }
-//     })
-//   })
-// })
 
-const Router = createStackNavigator({
-  main: {
+const mainNavigator = createStackNavigator({
+  mainTab: {
     screen: createBottomTabNavigator({
       home: {
         screen: HomeScreen
@@ -45,5 +34,22 @@ const Router = createStackNavigator({
     })
   }
 })
+
+const GuideNavigator = createStackNavigator({
+  welcome: {
+    screen: GuideScreen
+  }
+})
+
+/**
+ * 路由配置
+ */
+const Router = createSwitchNavigator({
+  guide: GuideNavigator,
+  main: mainNavigator
+}, {
+  initialRouteName: 'guide'
+})
+
 
 export default Router

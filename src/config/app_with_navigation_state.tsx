@@ -23,7 +23,7 @@ import {
  * react-navigation-redux-helpers 版本信息（"react-navigation-redux-helpers": "^2.0.6"）
  */
 
-const App = reduxifyNavigator(Router, 'main')
+const App = reduxifyNavigator(Router, 'guide')
 
 const mapStateToProps = (state: any, dispatch: any) => ({
   state: state.nav,
@@ -33,6 +33,6 @@ const mapStateToProps = (state: any, dispatch: any) => ({
 /**
  * app路由状态
  */
-const AppWithNavigationState = connect(mapStateToProps)(App)
+const AppWithNavigationState = connect(mapStateToProps,)(App)
 
 export default AppWithNavigationState
