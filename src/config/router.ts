@@ -44,11 +44,22 @@ const GuideNavigator = createStackNavigator({
   welcome: {
     screen: GuideScreen
   }
+}, {
+  navigationOptions: {
+    header: null
+  }
 })
 
+/**
+ * 广告页
+ */
 const AdsNavigator = createStackNavigator({
   open_ads: {
     screen: OpenAdsScreen
+  }
+}, {
+  navigationOptions: {
+    header: null
   }
 })
 
