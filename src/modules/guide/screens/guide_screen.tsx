@@ -27,7 +27,7 @@ class GuideScreen extends Component<IGuideProps> {
    * 按钮点击事件
    */
   onPress = () => {
-    this.props.navigation.navigate('mainTab')
+    this.props.navigation.navigate('ads')
   }
 
   render () {
