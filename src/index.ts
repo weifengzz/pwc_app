@@ -3,3 +3,7 @@
  * @author KooHead
  * @description 导出组件
  */
+
+import App from './config'
+
+export default App
