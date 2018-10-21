@@ -38,7 +38,42 @@ class GuideScreen extends Component<IGuideProps> {
           onPress={() => {
             this.onPress()
           }}
-        >引导页</Text>
+        >我叫刘印-=-=-=-=-=-=-=-=-=</Text>
+        <Text
+          onPress={() => {
+            this.onPress()
+          }}
+        >我叫刘印-=-=-=-=-=-=-=-=-=</Text>
+        <Text
+          onPress={() => {
+            this.onPress()
+          }}
+        >我叫刘印-=-=-=-=-=-=-=-=-=</Text>
+        <Text
+          onPress={() => {
+            this.onPress()
+          }}
+        >我叫刘印-=-=-=-=-=-=-=-=-=</Text>
+        <Text
+          onPress={() => {
+            this.onPress()
+          }}
+        >我叫刘印-=-=-=-=-=-=-=-=-=</Text>
+        <Text
+          onPress={() => {
+            this.onPress()
+          }}
+        >我叫刘印-=-=-=-=-=-=-=-=-=</Text>
+        <Text
+          onPress={() => {
+            this.onPress()
+          }}
+        >我叫刘印-=-=-=-=-=-=-=-=-=</Text>
+        <Text
+          onPress={() => {
+            this.onPress()
+          }}
+        >我叫刘印-=-=-=-=-=-=-=-=-=</Text>
       </View>
     )
   }
