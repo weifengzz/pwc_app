@@ -15,6 +15,7 @@ import {
 import { GuideStyle } from './style'
 
 import { IGuideProps } from './PropsType'
+import CodePush from 'react-native-code-push'
 
 const GuideStyles = StyleSheet.create<any>(GuideStyle)
 
@@ -38,42 +39,19 @@ class GuideScreen extends Component<IGuideProps> {
           onPress={() => {
             this.onPress()
           }}
-        >我叫刘印-=-=-=-=-=-=-=-=-=</Text>
+        >跳转</Text>
         <Text
+          style={{marginTop: 30}}
           onPress={() => {
-            this.onPress()
+
           }}
-        >我叫刘印-=-=-=-=-=-=-=-=-=</Text>
+        >检查更新</Text>
         <Text
+          style={{marginTop: 30}}
           onPress={() => {
-            this.onPress()
+            
           }}
-        >我叫刘印-=-=-=-=-=-=-=-=-=</Text>
-        <Text
-          onPress={() => {
-            this.onPress()
-          }}
-        >我叫刘印-=-=-=-=-=-=-=-=-=</Text>
-        <Text
-          onPress={() => {
-            this.onPress()
-          }}
-        >我叫刘印-=-=-=-=-=-=-=-=-=</Text>
-        <Text
-          onPress={() => {
-            this.onPress()
-          }}
-        >我叫刘印-=-=-=-=-=-=-=-=-=</Text>
-        <Text
-          onPress={() => {
-            this.onPress()
-          }}
-        >我叫刘印-=-=-=-=-=-=-=-=-=</Text>
-        <Text
-          onPress={() => {
-            this.onPress()
-          }}
-        >我叫刘印-=-=-=-=-=-=-=-=-=</Text>
+        >更新</Text>
       </View>
     )
   }

@@ -24,14 +24,14 @@ export default class App extends Component {
     CodePush.sync({
       installMode: CodePush.InstallMode.IMMEDIATE,
       updateDialog: {
-        // appendReleaseDescription: true,
-        // descriptionPrefix: '升级？',
-        // mandatoryContinueButtonLabel: '继续',
-        // mandatoryUpdateMessage: '是否升级',
-        // optionalIgnoreButtonLabel: '取消',
-        // optionalInstallButtonLabel: '升级',
-        // optionalUpdateMessage: '是否要升级',
-        // title: '是否升级'
+        appendReleaseDescription: true,
+        descriptionPrefix: '升级？',
+        mandatoryContinueButtonLabel: '继续',
+        mandatoryUpdateMessage: '是否升级',
+        optionalIgnoreButtonLabel: '取消',
+        optionalInstallButtonLabel: '升级',
+        optionalUpdateMessage: '是否要升级',
+        title: '是否升级'
       }
     })
   }
