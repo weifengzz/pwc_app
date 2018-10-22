@@ -15,7 +15,6 @@ import {
 import { GuideStyle } from './style'
 
 import { IGuideProps } from './PropsType'
-import CodePush from 'react-native-code-push'
 
 const GuideStyles = StyleSheet.create<any>(GuideStyle)
 
@@ -40,18 +39,6 @@ class GuideScreen extends Component<IGuideProps> {
             this.onPress()
           }}
         >跳转</Text>
-        <Text
-          style={{marginTop: 30}}
-          onPress={() => {
-
-          }}
-        >检查更新</Text>
-        <Text
-          style={{marginTop: 30}}
-          onPress={() => {
-            
-          }}
-        >更新</Text>
       </View>
     )
   }
