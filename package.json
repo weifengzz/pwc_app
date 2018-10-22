@@ -7,12 +7,14 @@
     "test": "jest"
   },
   "dependencies": {
+    "@types/react-native-vector-icons": "^4.6.4",
     "@types/react-navigation": "^2.0.24",
     "@types/react-redux": "^6.0.9",
     "@types/redux": "^3.6.0",
     "react": "16.4.1",
     "react-native": "0.56.0",
     "react-native-code-push": "^5.4.2",
+    "react-native-vector-icons": "^6.0.2",
     "react-navigation": "^2.3.0",
     "react-navigation-redux-helpers": "^2.0.6",
     "react-redux": "^5.0.7",
