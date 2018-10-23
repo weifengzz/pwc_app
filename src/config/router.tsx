@@ -13,7 +13,7 @@ import {
 } from 'react-navigation'
 
 // 图标库
-import Icon from 'react-native-vector-icons/FontAwesome'
+import { Icon } from '../components'
 
 // 首页
 import { HomeScreen } from '../modules/home/screens'
@@ -57,13 +57,13 @@ const mainNavigator = createStackNavigator({
       home: {
         screen: HomeScreen,
         navigationOptions: () => {
-          return tabOptions('首页', 'home', 'home')
+          return tabOptions('首页', 'p_home_fill', 'p_home')
         }
       },
       profile: {
         screen: ProfileScreen,
         navigationOptions: () => {
-          return tabOptions('我的', 'github-alt', 'github-alt')
+          return tabOptions('我的', 'p_people_fill', 'p_people')
         }
       }
     }, {

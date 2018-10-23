@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -49,6 +48,7 @@
 		7E38566CD79C49999C593A5A /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDB81ABFA52D452E8C8BF5D3 /* Foundation.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		A5B27462AB954B4AA09F0AD3 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8555FBDC767E43D29960FBEF /* MaterialIcons.ttf */; };
+		A9EC57EC8B0547D284BA430E /* Iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AADA87E0029C4A3D89C364EE /* Iconfont.ttf */; };
 		AB74C7B0C57A4608A43C4B41 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71FB0E5E2C78443C84C3A21E /* Ionicons.ttf */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		B8BE4AE2BF074688892CD303 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A69FBB7E5E964CD3AB0C48F7 /* libz.tbd */; };
@@ -401,6 +401,7 @@
 		8555FBDC767E43D29960FBEF /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		A69FBB7E5E964CD3AB0C48F7 /* libz.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		A6CA364C690247D083D33961 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		AADA87E0029C4A3D89C364EE /* Iconfont.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Iconfont.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Iconfont.ttf"; sourceTree = "<group>"; };
 		AC6F69D2E936432186C8D98E /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		AE7E2A36A9324FD8B54CEE36 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
@@ -652,6 +653,7 @@
 				52915D2D54C74E04947C9DD7 /* Octicons.ttf */,
 				C1168121B6334B2781CD0A7E /* SimpleLineIcons.ttf */,
 				D525F76FA3014D48B0477AB5 /* Zocial.ttf */,
+				AADA87E0029C4A3D89C364EE /* Iconfont.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1228,6 +1230,7 @@
 				3AC9B8636A2F408BB2401022 /* Octicons.ttf in Resources */,
 				3C91CAA83C7542A2AAAE243D /* SimpleLineIcons.ttf in Resources */,
 				069F9340CA03465BA50FCC2B /* Zocial.ttf in Resources */,
+				A9EC57EC8B0547D284BA430E /* Iconfont.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
