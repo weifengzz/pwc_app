@@ -9,10 +9,11 @@ import React from 'react'
 import {
   createStackNavigator,
   createBottomTabNavigator,
-  createSwitchNavigator,
-  NavigationNavigator,
-  NavigationRouteConfig
+  createSwitchNavigator
 } from 'react-navigation'
+
+// 图标库
+import Icon from 'react-native-vector-icons/FontAwesome'
 
 // 首页
 import { HomeScreen } from '../modules/home/screens'
@@ -23,10 +24,14 @@ import { GuideScreen } from '../modules/guide/screens'
 // 广告页
 import { OpenAdsScreen } from '../modules/ads/screens'
 
-import Icon from 'react-native-vector-icons/FontAwesome'
 
-
-const tabOptions = (navigation: NavigationNavigator, tabName: string, activeTintTab: string, inactiveTintTab: string ) => {
+/**
+ * tab 按钮样式配置
+ * @param tabName tab名称
+ * @param activeTintTab 选中tab，Icon名称
+ * @param inactiveTintTab 未选中tab, Icon名称
+ */
+const tabOptions = (tabName: string, activeTintTab: string, inactiveTintTab: string ) => {
   return {
     tabBarLabel: tabName,
     tabBarIcon: (opt: any) => {
@@ -51,14 +56,14 @@ const mainNavigator = createStackNavigator({
     screen: createBottomTabNavigator({
       home: {
         screen: HomeScreen,
-        navigationOptions: ({ navigation }: NavigationRouteConfig) => {
-          return tabOptions(navigation, '首页', 'home', 'home')
+        navigationOptions: () => {
+          return tabOptions('首页', 'home', 'home')
         }
       },
       profile: {
         screen: ProfileScreen,
-        navigationOptions: ({ navigation }: NavigationRouteConfig) => {
-          return tabOptions(navigation, '我的', 'github-alt', 'github-alt')
+        navigationOptions: () => {
+          return tabOptions('我的', 'github-alt', 'github-alt')
         }
       }
     }, {
@@ -70,11 +75,15 @@ const mainNavigator = createStackNavigator({
       tabBarOptions: {
           style: {
             backgroundColor: 'white',
-            height: 44
+            borderTopWidth: 0,
+            borderBottomWidth: 0,
+            height: 45
           },
           labelStyle: {
-            fontSize: 12
+            fontSize: 12,
+            margin: 0
           },
+          pressColor: 'red',
           activeTintColor: '#d0648f',
           inactiveTintColor: 'gray'
       }
