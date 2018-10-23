@@ -3,6 +3,7 @@ package com.koohead.pwcapp;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import org.devio.rn.splashscreen.SplashScreenReactPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.microsoft.codepush.react.CodePush;
 import com.facebook.react.ReactNativeHost;
@@ -31,6 +32,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new SplashScreenReactPackage(),
             new VectorIconsPackage(),
             new CodePush("dqVdxClBRvh8FtF4u748mmu9fI8x4ksvOXqog", getApplicationContext(), BuildConfig.DEBUG, "http://www.yingfeng.store:9001")
       );
