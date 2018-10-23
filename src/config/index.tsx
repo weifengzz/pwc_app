@@ -11,9 +11,11 @@ import store from './store'
 import { Provider } from 'react-redux'
 import AppNavigationControl from './app_navigation_control'
 import {
-  View, Alert
+  View,
+  StatusBar
 } from 'react-native'
 import CodePush from 'react-native-code-push'
+import SplahScreen from 'react-native-splash-screen'
 
 /**
  * @class
@@ -21,6 +23,7 @@ import CodePush from 'react-native-code-push'
  */
 export default class App extends Component {
   componentDidMount () {
+    SplahScreen.hide()
     CodePush.sync({
       installMode: CodePush.InstallMode.IMMEDIATE,
       updateDialog: {
@@ -38,6 +41,7 @@ export default class App extends Component {
   render () {
     return (
       <View style={{flex: 1}}>
+        <StatusBar backgroundColor='white' barStyle={'dark-content'} />
         <Provider store={store}>
           <AppNavigationControl />
         </Provider>
