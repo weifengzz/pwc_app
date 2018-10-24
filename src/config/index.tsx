@@ -5,8 +5,7 @@
  * @description 配置入口
  */
 
-import React from 'react'
-import { Component } from 'react'
+import React, { Component } from 'react'
 import store from './store'
 import { Provider } from 'react-redux'
 import AppNavigationControl from './app_navigation_control'

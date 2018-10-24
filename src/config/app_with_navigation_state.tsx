@@ -33,6 +33,6 @@ const mapStateToProps = (state: any, dispatch: any) => ({
 /**
  * app路由状态
  */
-const AppWithNavigationState = connect(mapStateToProps,)(App)
+const AppWithNavigationState = connect(mapStateToProps)(App)
 
 export default AppWithNavigationState

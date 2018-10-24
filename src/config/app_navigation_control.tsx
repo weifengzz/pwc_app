@@ -5,8 +5,7 @@
  * @description 返回键状态管理
  */
 
-import React from 'react'
-import { Component } from 'react'
+import React, { Component } from 'react'
 import AppWithNavigationState from './app_with_navigation_state'
 import { connect } from 'react-redux'
 import { IAppNavigationControlProps } from './PropType'

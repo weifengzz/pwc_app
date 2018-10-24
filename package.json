@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "lint": "tslint -t codeFrame --project tsconfig.json 'src/*.{ts,tsx}'"
   },
   "dependencies": {
     "@babel/runtime": "^7.1.2",
@@ -33,6 +34,10 @@
     "jest": "23.6.0",
     "react-native-typescript-transformer": "^1.2.10",
     "react-test-renderer": "16.4.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-react": "^3.6.0",
     "typescript": "^3.1.2"
   },
   "jest": {
