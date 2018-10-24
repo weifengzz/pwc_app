@@ -56,3 +56,5 @@ buck-out/
 *.jsbundle
 
 yarn.lock
+
+package-lock.json

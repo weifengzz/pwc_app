@@ -5,13 +5,13 @@
  * @description 引导界面
  */
 
-import React from 'react'
-import { Component } from 'react'
+import React, { Component } from 'react'
 import {
   View,
   Text,
   StyleSheet
 } from 'react-native'
+
 import { GuideStyle } from './style'
 
 import { IGuideProps } from './PropsType'

@@ -31,7 +31,9 @@
     "@types/react-native": "^0.57.4",
     "babel-jest": "23.6.0",
     "babel-preset-react-native": "^5",
+    "husky": "^1.1.2",
     "jest": "23.6.0",
+    "lint-staged": "^7.0.5",
     "react-native-typescript-transformer": "^1.2.10",
     "react-test-renderer": "16.4.1",
     "tslint": "^5.11.0",
@@ -42,5 +44,17 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "npm run lint",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "lint-staged"
+    }
   }
 }

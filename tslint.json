@@ -15,6 +15,7 @@
     "jsx-no-lambda": false,
     "jsx-boolean-value": false,
     "member-access": [true, "no-public"],
+    "no-trailing-whitespace": true,
     "one-line": [
       true,
       "check-open-brace",

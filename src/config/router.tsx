@@ -31,11 +31,11 @@ import { OpenAdsScreen } from '../modules/ads/screens'
  * @param activeTintTab 选中tab，Icon名称
  * @param inactiveTintTab 未选中tab, Icon名称
  */
-const tabOptions = (tabName: string, activeTintTab: string, inactiveTintTab: string ) => {
+const tabOptions = (tabName: string, activeTintTab: string, inactiveTintTab: string) => {
   return {
     tabBarLabel: tabName,
     tabBarIcon: (opt: any) => {
-      if (opt.focused){
+      if (opt.focused) {
         return (
           <Icon name={activeTintTab} size={25} color='#d0648f' />
         )
@@ -67,11 +67,11 @@ const mainNavigator = createStackNavigator({
         }
       }
     }, {
-      //点击哪个才加载哪个tab里的页面
+      // 点击哪个才加载哪个tab里的页面
       lazy: true,
-      //设置tab放在界面的底部
+      // 设置tab放在界面的底部
       tabBarPosition: 'bottom',
-      //设置tab里面的样式
+      // 设置tab里面的样式
       tabBarOptions: {
           style: {
             backgroundColor: 'white',
