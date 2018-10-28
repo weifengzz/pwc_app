@@ -16,13 +16,13 @@ token: sf21IfnCaUDsjxUp6tS7wxvetaqT4ksvOXqog
 
 iOS: 
 
-┌────────────┬───────────────────────────────────────┐
-│ Name       │ Deployment Key                        │
-├────────────┼───────────────────────────────────────┤
-│ Production │ JRpgT635OdAaBtullDDh351z3oVA4ksvOXqog │
-├────────────┼───────────────────────────────────────┤
-│ Staging    │ cXBTRUa8v9ayibAPJfJSbvlxWBmD4ksvOXqog │
-└────────────┴───────────────────────────────────────┘
+    ┌────────────┬───────────────────────────────────────┐
+    │ Name       │ Deployment Key                        │
+    ├────────────┼───────────────────────────────────────┤
+    │ Production │ JRpgT635OdAaBtullDDh351z3oVA4ksvOXqog │
+    ├────────────┼───────────────────────────────────────┤
+    │ Staging    │ cXBTRUa8v9ayibAPJfJSbvlxWBmD4ksvOXqog │
+    └────────────┴───────────────────────────────────────┘
 
 android:
 
