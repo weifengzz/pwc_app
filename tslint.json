@@ -53,7 +53,8 @@
       true,
       3
     ],
-    "new-parens": true
+    "new-parens": true,
+    "no-floating-promises": false
   },
   "rulesDirectory": []
 }
