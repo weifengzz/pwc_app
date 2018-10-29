@@ -54,7 +54,8 @@
       3
     ],
     "new-parens": true,
-    "no-floating-promises": false
+    "no-floating-promises": false,
+    "no-console": false
   },
   "rulesDirectory": []
 }

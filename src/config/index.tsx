@@ -14,6 +14,11 @@ import {
 } from 'react-native'
 import CodePush from 'react-native-code-push'
 import SplahScreen from 'react-native-splash-screen'
+import {
+  log,
+  logWarm,
+  logErr
+} from '../utils'
 
 /**
  * @class
@@ -22,19 +27,19 @@ import SplahScreen from 'react-native-splash-screen'
 export default class App extends Component {
   componentDidMount () {
     SplahScreen.hide()
-    CodePush.sync({
-      installMode: CodePush.InstallMode.IMMEDIATE,
-      updateDialog: {
-        appendReleaseDescription: true,
-        descriptionPrefix: '升级？',
-        mandatoryContinueButtonLabel: '继续',
-        mandatoryUpdateMessage: '是否升级',
-        optionalIgnoreButtonLabel: '取消',
-        optionalInstallButtonLabel: '升级',
-        optionalUpdateMessage: '是否要升级',
-        title: '是否升级'
-      }
-    })
+    // CodePush.sync({
+    //   installMode: CodePush.InstallMode.IMMEDIATE,
+    //   updateDialog: {
+    //     appendReleaseDescription: true,
+    //     descriptionPrefix: '升级？',
+    //     mandatoryContinueButtonLabel: '继续',
+    //     mandatoryUpdateMessage: '是否升级',
+    //     optionalIgnoreButtonLabel: '取消',
+    //     optionalInstallButtonLabel: '升级',
+    //     optionalUpdateMessage: '是否要升级',
+    //     title: '是否升级'
+    //   }
+    // })
   }
   render () {
     return (
