@@ -5,8 +5,7 @@
  * @description 个人中心
  */
 
-import React from 'react'
-import { Component } from 'react'
+import React, { Component } from 'react'
 import {
   View,
   Text

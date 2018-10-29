@@ -10,8 +10,7 @@ import store from './store'
 import { Provider } from 'react-redux'
 import AppNavigationControl from './app_navigation_control'
 import {
-  View,
-  StatusBar
+  View
 } from 'react-native'
 import CodePush from 'react-native-code-push'
 import SplahScreen from 'react-native-splash-screen'
@@ -23,24 +22,23 @@ import SplahScreen from 'react-native-splash-screen'
 export default class App extends Component {
   componentDidMount () {
     SplahScreen.hide()
-    CodePush.sync({
-      installMode: CodePush.InstallMode.IMMEDIATE,
-      updateDialog: {
-        appendReleaseDescription: true,
-        descriptionPrefix: '升级？',
-        mandatoryContinueButtonLabel: '继续',
-        mandatoryUpdateMessage: '是否升级',
-        optionalIgnoreButtonLabel: '取消',
-        optionalInstallButtonLabel: '升级',
-        optionalUpdateMessage: '是否要升级',
-        title: '是否升级'
-      }
-    })
+    // CodePush.sync({
+    //   installMode: CodePush.InstallMode.IMMEDIATE,
+    //   updateDialog: {
+    //     appendReleaseDescription: true,
+    //     descriptionPrefix: '升级？',
+    //     mandatoryContinueButtonLabel: '继续',
+    //     mandatoryUpdateMessage: '是否升级',
+    //     optionalIgnoreButtonLabel: '取消',
+    //     optionalInstallButtonLabel: '升级',
+    //     optionalUpdateMessage: '是否要升级',
+    //     title: '是否升级'
+    //   }
+    // })
   }
   render () {
     return (
       <View style={{flex: 1}}>
-        <StatusBar backgroundColor='white' barStyle={'dark-content'} />
         <Provider store={store}>
           <AppNavigationControl />
         </Provider>

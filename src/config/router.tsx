@@ -33,6 +33,7 @@ import { OpenAdsScreen } from '../modules/ads/screens'
  */
 const tabOptions = (tabName: string, activeTintTab: string, inactiveTintTab: string) => {
   return {
+    header: null,
     tabBarLabel: tabName,
     tabBarIcon: (opt: any) => {
       if (opt.focused) {
@@ -88,6 +89,10 @@ const mainNavigator = createStackNavigator({
           inactiveTintColor: 'gray'
       }
   })
+  }
+}, {
+  navigationOptions: {
+    header: null
   }
 })
 
