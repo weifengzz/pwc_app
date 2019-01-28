@@ -1,17 +1,11 @@
-## 玩转中国
+## TypeScript react-native模板
 
-### keystore相关配置
+<!-- ### keystore相关配置
 
 ```
 
 Alias： pwcapp
 Password: 1234567890qwertyuiop
-
-```
-
-### 热更新相关
-
-```
 token: sf21IfnCaUDsjxUp6tS7wxvetaqT4ksvOXqog
 
 iOS: 
@@ -33,8 +27,15 @@ android:
     ├────────────┼───────────────────────────────────────┤
     │ Staging    │ 3DoRocipIheE1YsXk2Wj5Aes4lQH4ksvOXqog │
     └────────────┴───────────────────────────────────────┘
-    
-命令：
+
+``` -->
+
+### 热更新相关
+
+```
+
+
+ 命令：
     1、登陆：code-push login
     2、查看所有app：code-push app ls
     3、新建app：code-push app add <appName>
@@ -51,3 +52,18 @@ android:
     1、code-push release-react pwcAndroid android -d production
 
 ```
+
+# FEATURE
+
+```
+    1、热更新
+    2、TypeScript
+    3、splash screen
+    4、react-navigation
+    5、react-native-vector-icons
+
+```
+
+### 说明
+
+* 项目中涉及到logo的图片或其它涉及版权或隐私的信息，请勿使用，谢谢！
