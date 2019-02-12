@@ -53,7 +53,7 @@ android:
 
 ```
 
-### FEATURE
+### Features
 
 ```
     1、热更新
