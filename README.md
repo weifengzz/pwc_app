@@ -67,3 +67,6 @@ android:
 ### 说明
 
 * 项目中涉及到logo的图片或其它涉及版权或隐私的信息，请勿使用，谢谢！
+
+### License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
